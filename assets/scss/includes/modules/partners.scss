@@ -1,0 +1,42 @@
+.partners {
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+    .swiper-partners {
+        display: flex;
+        margin-top: 20px;
+
+        .swiper-slide {
+            width: 200px !important;
+        }
+
+        .col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 1px solid rgba($color: $color-7, $alpha: 0.2);
+
+            .partners__img {
+                width: 100%;
+                opacity: 0.5;
+            }
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            &:hover {
+                .partners__img {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

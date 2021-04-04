@@ -1,0 +1,164 @@
+.contacts {
+    .section-title {
+        font-size: 20pt;
+        color: $color-2;
+        text-transform: unset;
+    }
+
+    .breadcrumb {
+        padding-top: 35px;
+        padding-bottom: 15px;
+
+        .breadcrumb-menu {
+            display: flex;
+
+            .breadcrumb-item {
+                font-weight: 300;
+                color: $color-7;
+
+                .breadcrumb-link {
+                    font-weight: 300;
+                }
+
+                &::before {
+                    content: '\e5cc';
+                    font-family: 'Material Icons';
+                    margin-right: 5px;
+                    color: $color-2;
+                }
+
+                &:first-of-type {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .info {
+        padding-top: 20px;
+        padding-bottom: 25px;
+
+        #map {
+            height: 380px;
+            margin-top: 30px;
+        }
+
+        .contact-info {
+            margin-top: 55px;
+            
+            .row {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                padding: 25px 15px;
+                border: 1px solid rgba($color: $color-7, $alpha: 0.2);
+                border-radius: 2px;
+
+                .col {
+                    display: flex;
+                    align-items: center;
+                    flex: 0 0 100%;
+                    margin: 10px 0;
+
+                    .icon-col {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 55px;
+                        height: 55px;
+                        border: 1px solid $color-2;
+                        border-radius: 50%;
+
+                        span {
+                            font-size: 32px;
+                        }
+                    }
+
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 15px;
+                        font-size: 13pt;
+                        font-weight: 300;
+
+                        .subtitle {
+                            color: $color-7;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .subscribe {
+        padding-top: 25px;
+
+        .section-title {
+            padding-bottom: 30px;
+            text-align: left;
+            border-bottom: 1px solid rgba($color: $color-7, $alpha: 0.2);
+        }
+
+        .form-sub {
+            flex-direction: column;
+
+            .form-col {
+                display: flex;
+                flex-wrap: wrap;
+
+                &:last-of-type {
+                    flex-direction: column;
+                }
+            }
+
+            .col {
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 100%;
+                height: unset;
+
+                .title {
+                    font-size: 18pt;
+                    margin-bottom: 25px;
+                }
+
+                .form-sub__input {
+                    height: 45px;
+                    margin-bottom: 10px;
+                    font-weight: 300 !important;
+                }
+
+                .form-sub__btn {
+                    width: max-content !important;
+                    background: $color-2 !important;
+                    margin-bottom: 0 !important;
+                }
+
+                .form-sub__comment {
+                    margin-top: 0;
+                    padding-top: 25px;
+                    padding-bottom: 60px;
+                }
+
+                &.lic-col {
+                    margin-bottom: 15px;
+
+                    input:checked ~ label::before {
+                        content: '\e5ca';
+                        background: $color-2;
+                    }
+
+                    label {
+                        &::before {
+                            content: '';
+                            border-color: $color-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    color: $color-2;
+}
+
+.container {
+    max-width: 1475px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font-size: 20pt;
+    color: $color-9;
+    text-transform: uppercase;
+
+    span {
+        font-weight: 300;
+        color: $color-2;
+    }
+}
+
+.section-link {
+    font-size: 10pt;
+    color: $color-9;
+    padding-bottom: 5px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: $color-2;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+input, label {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: $color-2;
+}

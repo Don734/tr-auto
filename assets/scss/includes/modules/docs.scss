@@ -1,0 +1,135 @@
+.docs {
+    .page-header {
+        padding: 70px 0;
+        background: $color-10;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .col {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex: 0 0 100%;
+                margin: 15px 0;
+
+                .title {
+                    position: relative;
+                    padding-bottom: 15px;
+                    font-size: 19pt;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: center;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        max-width: 300px;
+                        left: 45px;
+                        right: 45px;
+                        bottom: 0;
+                        height: 1px;
+                        background: rgba($color: $color-7, $alpha: 0.2);
+                    }
+                }
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+
+                    .text {
+                        margin-top: 20px;
+                        font-size: 13pt;
+                        font-weight: 300;
+                        line-height: 21pt;
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        padding: 50px 0;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .col {
+                flex: 0 0 100%;
+                margin-top: 30px;
+
+                .title {
+                    font-size: 19pt;
+                    color: $color-4;
+                    text-transform: uppercase;
+                }
+
+                .accordion-menu {
+                    .accordion-item {
+                        margin-top: 20px;
+
+                        .accordion-link {
+                            position: relative;
+                            padding-left: 35px;
+                            font-size: 17pt;
+                            font-weight: bold;
+
+                            &::before {
+                                content: '\e5df';
+                                position: absolute;
+                                left: 0;
+                                font-family: 'Material Icons Outlined';
+                            }
+                        }
+
+                        .accordion-menu {
+                            display: none;
+                            padding-left: 30px;
+                            margin-top: 0;
+
+                            .accordion-item {
+                                .accordion-link {
+                                    padding-left: 0;
+                                    font-size: 16pt;
+                                    font-weight: 300;
+
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+
+                                    &::before {
+                                        content: '\e8b8';
+                                        position: static;
+                                        margin-right: 15px;
+                                        font-size: 26px;
+                                        color: $color-4;
+                                        text-decoration: none;
+                                        opacity: .3;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.active {
+                            .accordion-link::before {
+                                transform: rotate(90deg);
+                                color: $color-12;
+                            }
+
+                            .accordion-menu {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

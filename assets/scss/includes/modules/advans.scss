@@ -1,0 +1,39 @@
+.advans {
+    padding-top: 15px;
+    padding-bottom: 70px;
+    background: $color-10;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1 0 100%;
+            margin: 10px;
+
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                margin-bottom: 25px;
+                font-size: 32px;
+                border: 1px solid $color-2;
+                border-radius: 50%;
+            }
+
+            .advans-text {
+                font-size: 17pt;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
+}
