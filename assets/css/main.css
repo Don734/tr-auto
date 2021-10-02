@@ -870,6 +870,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   margin-bottom: 25px;
   font-size: 16px;
+  font-weight: 500;
 }
 .news .content .row:last-of-type .news-other .date {
   margin-right: 10px;
