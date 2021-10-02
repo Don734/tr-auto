@@ -718,7 +718,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1 0 100%;
   max-width: 540px;
   padding: 20px 25px 30px 25px;
-  margin: 15px;
+  margin: 15px 0;
   text-align: center;
   border-radius: 5px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
@@ -1292,6 +1292,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .products .content .row .col {
     flex: 1 0 45%;
+    margin: 15px;
   }
   .products.page .about-wrap {
     height: 105px;
