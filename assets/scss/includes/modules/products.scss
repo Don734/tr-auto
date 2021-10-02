@@ -29,10 +29,6 @@
 
 .products {
     .content {
-        .container {
-            padding: 0;
-        }
-
         .row {
             display: flex;
             flex-wrap: wrap;
@@ -103,10 +99,6 @@
         .content {
             padding-top: 70px;
             padding-bottom: 55px;
-
-            .container {
-                padding: 0 15px;
-            }
 
             .img-block {
                 max-width: 300px;
