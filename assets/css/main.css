@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 95px;
   left: -270px;
   bottom: 0;
-  display: block;
+  display: none;
   width: 270px;
   padding: 0 15px;
   background: #19324b;
@@ -346,6 +346,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 .header .navbar .nav-menu.show {
+  display: block;
   left: 0;
 }
 .header .navbar .nav-search {
@@ -703,9 +704,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
-.products .content .container {
-  padding: 0;
-}
 .products .content .row {
   display: flex;
   flex-wrap: wrap;
@@ -765,9 +763,6 @@ h1, h2, h3, h4, h5, h6 {
 .products.page .content {
   padding-top: 70px;
   padding-bottom: 55px;
-}
-.products.page .content .container {
-  padding: 0 15px;
 }
 .products.page .content .img-block {
   max-width: 300px;
