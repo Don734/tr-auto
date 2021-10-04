@@ -137,7 +137,6 @@
         padding: 0 25px;
 
         .about-text {
-            padding-left: 40px;
             padding-top: 0;
         }
     }
@@ -164,6 +163,7 @@
 
         &.page {
             .about-wrap {
+                margin-bottom: -15px;
                 height: 105px;
             }
 
@@ -358,6 +358,20 @@
     }
 
     .products {
+        .content {
+            .row {
+                .col {
+                    &:nth-of-type(odd) {
+                        margin-left: 0;
+                    }
+
+                    &:nth-of-type(even) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
         &.page {
             .about-wrap {
                 height: 85px;
@@ -375,6 +389,7 @@
 
                     &:last-of-type {
                         display: block;
+                        margin-right: 0;
                     }
                 }
             }
@@ -457,10 +472,17 @@
 
         .content {
             .row {
+                &:first-of-type {
+                    .col {
+                        margin-bottom: 0 !important;
+                    }
+                }
+
                 &:last-of-type {
                     .col {
                         max-width: 255px;
-                        margin: 15px !important;
+                        margin: 0 15px !important;
+
 
                         &:first-of-type {
                             margin-left: 0 !important;
@@ -480,6 +502,17 @@
             .row {
                 .col {
                     height: 385px;
+                }
+            }
+        }
+    }
+
+    .jobs {
+        .content {
+            .content-col:nth-of-type(2) {
+                .img-block {
+                    position: relative;
+                    right: 110px;
                 }
             }
         }

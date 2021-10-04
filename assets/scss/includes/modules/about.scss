@@ -4,7 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    margin-bottom: 45px;
+    margin-bottom: 0;
     padding: 25px 15px;
     color: $color-1;
     background-color: $color-3;
@@ -75,6 +75,7 @@
             .col {
                 flex: 1 0 100%;
                 max-width: 350px;
+                margin: 0 15px;
                 margin-bottom: 35px;
 
                 .img-block {
@@ -96,13 +97,21 @@
                 }
 
                 .title {
-                    font-size: 20px;
+                    font-size: 18px;
                     color: $color-2;
                 }
 
                 .text {
                     margin-top: 10px;
                     font-size: 16px;
+                }
+
+                &.ml0 {
+                    margin-left: 0;
+                }
+
+                &.mr0 {
+                    margin-right: 0;
                 }
             }
         }
