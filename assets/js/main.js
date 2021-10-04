@@ -13,7 +13,6 @@ function menuToggle() {
 
     $(document).on('click', function (e) {
         if ( !( ($(e.target).parents('.nav-menu').length) || ($(e.target).hasClass('nav-link')) || ($(e.target).parents('.menu-open').length) || ($(e.target).hasClass('menu-open')) ) || $(e.target).parents('.menu-close').length ) {
-            console.log('test');
             $('.nav-menu').removeClass('show');
         }
     })

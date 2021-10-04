@@ -9,6 +9,7 @@
             right: 0;
             bottom: 0;
             left: 0;
+            z-index: 1;
         }
 
         .date {
@@ -26,8 +27,10 @@
                 margin: 15px 0;
                 border-radius: 5px;
                 box-shadow: 0 0 4px rgb(0 0 0 / 20%);
+                overflow: hidden;
 
                 .img-block {
+                    position: relative;
                     height: 250px;
 
                     img {
@@ -35,6 +38,17 @@
                         height: 100%;
                     }
                     
+                    .overlay {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        background: rgba($color: $color-3, $alpha: 0.3);
+                        transition: .1s ease;
+                    }
                 }
 
                 .divider {
@@ -70,6 +84,14 @@
 
                 &:hover {
                     background: $color-5;
+                    box-shadow: none;
+
+                    .img-block {
+                        .overlay {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
                 }
             }
 
@@ -82,7 +104,6 @@
                     align-items: center;
                     margin-bottom: 25px;
                     font-size: 16px;
-                    font-weight: 500;
 
                     .date {
                         margin-right: 10px;
@@ -100,6 +121,7 @@
             margin-top: 45px;
 
             .img-block {
+                position: relative;
                 float: left;
                 max-width: 350px;
                 height: 250px;

@@ -17,7 +17,7 @@
         flex: 0 0 100%;
         margin-top: 15px;
         color: $color-3;
-        font-size: 16px;
+        font-size: 14px;
         text-decoration: underline !important;
         
 
@@ -90,6 +90,7 @@
 
                 &:hover {
                     background: $color-5;
+                    box-shadow: none;
                 }
             }
         }
@@ -138,7 +139,7 @@
 
         .cert {
             padding: 65px 0;
-            background: #fafafa;
+            background: $color-5;
 
             .img-block {
                 img {
