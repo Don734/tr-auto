@@ -1515,6 +1515,9 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     right: 110px;
   }
+  .jobs .content .content-col:nth-of-type(2) .wrap {
+    margin-left: 0;
+  }
 
   .footer .container .right-col {
     flex: 0 0 45%;
