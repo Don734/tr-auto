@@ -444,7 +444,7 @@
                 width: unset;
 
                 .nav-item {
-                    flex: auto;
+                    flex: 0;
 
                     &.close {
                         display: none;
@@ -526,6 +526,7 @@
         .container {
             .right-col {
                 flex: 0 0 45%;
+                padding-top: 20px;
             }
         }
     }
