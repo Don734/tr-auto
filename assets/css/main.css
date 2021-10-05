@@ -1244,6 +1244,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header .top-wrap .right-col .context {
     display: block;
+    padding-top: 5px;
   }
   .header .top-wrap .right-col .wrap {
     max-width: 115px;
@@ -1407,6 +1408,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header .top-wrap .right-col .wrap .col {
     display: block;
+    padding-top: 5px;
   }
 
   .main .content .row .col .search__inner .wrap .search__form .search__input {
