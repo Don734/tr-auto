@@ -261,6 +261,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 30px;
   padding: 0 10px;
+  padding-right: 45px;
   font-size: 14px;
   outline: none;
   border: none;
@@ -297,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header .navbar .nav-menu .nav-item.search {
   flex: unset;
-  max-width: 175px;
+  max-width: 210px;
   width: 100%;
   margin-left: 15px;
   margin-right: 20px;
