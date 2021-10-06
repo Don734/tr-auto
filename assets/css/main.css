@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 .header .top-wrap .left-col {
-  flex: 0 0 40%;
+  flex: 0 0 20%;
 }
 .header .top-wrap .left-col .menu-toggle {
   color: #f7c600;
@@ -213,13 +213,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
 }
 .header .top-wrap .right-col {
-  flex: 0 0 60%;
+  flex: 1 0 60%;
   max-width: 50px;
   justify-content: space-between;
 }
 .header .top-wrap .right-col .context {
   display: none;
   max-width: 290px;
+  margin: 0 auto;
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
@@ -296,9 +297,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header .navbar .nav-menu .nav-item.search {
   flex: unset;
-  max-width: 265px;
+  max-width: 175px;
   width: 100%;
   margin-left: 15px;
+  margin-right: 20px;
 }
 .header .navbar .nav-menu .nav-item.search .nav-search {
   display: none;
@@ -354,6 +356,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 .header .navbar .nav-search {
+  max-width: 260px;
   margin-left: 15px;
 }
 
@@ -1064,9 +1067,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .waranty .content .content-col:nth-of-type(2) .container .text-wrap .subtext {
   margin-left: 0;
-}
-.waranty .content .content-col:nth-of-type(3) .about-wrap .about-text {
-  padding-left: 20px;
 }
 
 .contacts .row {
