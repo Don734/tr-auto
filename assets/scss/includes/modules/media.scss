@@ -30,10 +30,47 @@
 
         .navbar {
             .nav-menu {
+                position: relative;
+                top: 0;
+                left: 0;
+                display: flex;
+                width: 100%;
+                padding: 0;
+
                 .nav-item {
+                    flex: 0;
+
+                    .nav-link {
+                        padding: 10px;
+                    }
+
+                    .search-open {
+                        display: block;
+                        padding: 0;
+                    }
+
+                    &.close {
+                        display: none;
+                    }
+
                     &.search {
+                        max-width: 30px;
+                        margin-right: 0;
+                        margin-left: 0;
+
                         .nav-search {
+                            position: absolute;
+                            right: -15px;
+                            top: 45px;
                             display: none;
+                            max-width: 250px;
+                            margin-left: 0;
+                            padding: 10px 50px 10px 10px;
+                            background: $color-3;
+
+                            &.show {
+                                display: block;
+                            }
                         }
                     }
 
@@ -41,6 +78,14 @@
                         display: none;
                     }
                 }
+            }
+
+            .menu-open {
+                display: none;
+            }
+    
+            .nav-search {
+                display: none;
             }
         }
     }
@@ -50,8 +95,15 @@
             .row {
                 .col {
                     .news-col {
+                        flex-wrap: nowrap;
+                        
                         .img-block {
                             width: unset;
+                            height: 100%;
+
+                            img {
+                                height: 95px;
+                            }
                         }
 
                         .news-wrap {
@@ -428,41 +480,48 @@
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1115px) {
     .header {
         .navbar {
             .container {
                 display: block !important;
                 height: unset;
-            }
-
-            .menu-open {
-                display: none;
+                padding: 0 15px;
             }
 
             .nav-menu {
-                position: static;
-                display: flex;
-                width: unset;
+                padding: 0 15px;
 
                 .nav-item {
-                    flex: 0;
+                    .nav-link {
+                        padding: 18px;
+                    }
 
-                    &.close {
+                    .search-open {
                         display: none;
                     }
 
                     &.search {
+                        max-width: 210px;
+                        margin-right: 20px;
+
                         .nav-search {
+                            position: relative;
+                            top: 0;
+                            padding: 0;
                             display: block;
-                            margin-left: 0;
+                            background: transparent;
+
+                            button {
+                                right: 10px;
+                            }
+                        }
+
+                        .search-close {
+                            display: none;
                         }
                     }
                 }
-            }
-
-            .nav-search {
-                display: none;
             }
         }
     }
