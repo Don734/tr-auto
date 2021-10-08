@@ -270,12 +270,16 @@ h1, h2, h3, h4, h5, h6 {
 .header .navbar .nav-search button {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 50px;
   transform: translateY(-50%);
   cursor: pointer;
 }
 .header .navbar .nav-search button .icon {
   color: #19324b;
+}
+.header .navbar .nav-search button.search-close {
+  right: 16px;
+  color: #ffffff;
 }
 .header .navbar .nav-menu {
   display: flex;
@@ -295,6 +299,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header .navbar .nav-menu .nav-item .nav-link:hover, .header .navbar .nav-menu .nav-item .nav-link.active {
   color: #f7c600;
+}
+.header .navbar .nav-menu .nav-item .search-open {
+  display: none;
+  color: #ffffff;
 }
 .header .navbar .nav-menu .nav-item.search {
   flex: unset;
@@ -316,8 +324,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   color: #ffffff;
   background: #f7c600;
   border-radius: 5px;
@@ -357,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 .header .navbar .nav-search {
-  max-width: 260px;
+  max-width: 210px;
   margin-left: 15px;
 }
 
@@ -465,10 +473,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main .content .row .col .news-col .img-block {
   width: 100%;
-  height: 100%;
+  height: 150px;
 }
 .main .content .row .col .news-col .img-block img {
-  height: 95px;
+  height: 100%;
 }
 .main .content .row .col .news-col .news-wrap {
   margin-top: 5px;
@@ -543,7 +551,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .main .content .row:first-of-type .col:first-of-type {
-  max-height: 180px;
+  max-height: 240px;
   border-left: 5px solid #f7c600;
 }
 .main .content .row:first-of-type .col, .main .content .row:nth-of-type(2) .col {
@@ -1250,15 +1258,64 @@ h1, h2, h3, h4, h5, h6 {
   .header .top-wrap .right-col .wrap .signin .text {
     display: block;
   }
-  .header .navbar .nav-menu .nav-item.search .nav-search {
+  .header .navbar .nav-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+  .header .navbar .nav-menu .nav-item {
+    flex: 0;
+  }
+  .header .navbar .nav-menu .nav-item .nav-link {
+    padding: 10px;
+  }
+  .header .navbar .nav-menu .nav-item .search-open {
+    display: block;
+    padding: 0;
+  }
+  .header .navbar .nav-menu .nav-item.close {
     display: none;
+  }
+  .header .navbar .nav-menu .nav-item.search {
+    max-width: 30px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .header .navbar .nav-menu .nav-item.search .nav-search {
+    position: absolute;
+    right: -15px;
+    top: 45px;
+    display: none;
+    max-width: 250px;
+    margin-left: 0;
+    padding: 10px 50px 10px 10px;
+    background: #19324b;
+  }
+  .header .navbar .nav-menu .nav-item.search .nav-search.show {
+    display: block;
   }
   .header .navbar .nav-menu .nav-item.sign {
     display: none;
   }
+  .header .navbar .menu-open {
+    display: none;
+  }
+  .header .navbar .nav-search {
+    display: none;
+  }
 
+  .main .content .row .col .news-col {
+    flex-wrap: nowrap;
+  }
   .main .content .row .col .news-col .img-block {
     width: unset;
+    height: 100%;
+  }
+  .main .content .row .col .news-col .img-block img {
+    height: 95px;
   }
   .main .content .row .col .news-col .news-wrap {
     margin-top: 0;
@@ -1464,30 +1521,36 @@ h1, h2, h3, h4, h5, h6 {
     flex: 0 0 30%;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1115px) {
   .header .navbar .container {
     display: block !important;
     height: unset;
-  }
-  .header .navbar .menu-open {
-    display: none;
+    padding: 0 15px;
   }
   .header .navbar .nav-menu {
-    position: static;
-    display: flex;
-    width: unset;
+    padding: 0 15px;
   }
-  .header .navbar .nav-menu .nav-item {
-    flex: 0;
+  .header .navbar .nav-menu .nav-item .nav-link {
+    padding: 18px;
   }
-  .header .navbar .nav-menu .nav-item.close {
+  .header .navbar .nav-menu .nav-item .search-open {
     display: none;
   }
-  .header .navbar .nav-menu .nav-item.search .nav-search {
-    display: block;
-    margin-left: 0;
+  .header .navbar .nav-menu .nav-item.search {
+    max-width: 210px;
+    margin-right: 20px;
   }
-  .header .navbar .nav-search {
+  .header .navbar .nav-menu .nav-item.search .nav-search {
+    position: relative;
+    top: 0;
+    padding: 0;
+    display: block;
+    background: transparent;
+  }
+  .header .navbar .nav-menu .nav-item.search .nav-search button {
+    right: 10px;
+  }
+  .header .navbar .nav-menu .nav-item.search .search-close {
     display: none;
   }
 
