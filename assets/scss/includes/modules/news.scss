@@ -23,7 +23,6 @@
             .col {
                 position: relative;
                 flex: 1 0 100%;
-                max-width: 350px;
                 margin: 15px 0;
                 border-radius: 5px;
                 box-shadow: 0 0 4px rgb(0 0 0 / 20%);
@@ -96,12 +95,12 @@
             }
 
             &:last-of-type {
+                justify-content: flex-start;
                 margin-top: 60px;
 
                 .news-other {
                     position: relative;
                     display: flex;
-                    align-items: center;
                     margin-bottom: 25px;
                     font-size: 16px;
 
@@ -122,8 +121,7 @@
 
             .img-block {
                 position: relative;
-                float: left;
-                max-width: 350px;
+                float: unset;
                 height: 250px;
                 margin-bottom: 30px;
 
