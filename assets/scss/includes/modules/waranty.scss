@@ -30,7 +30,6 @@
 
                 .file-link {
                     flex: 1 0 30%;
-                    max-width: 210px;
                     margin: 15px 35px;
                     white-space: inherit;
                 }
@@ -47,13 +46,12 @@
                     flex-wrap: wrap;
 
                     .files-row {
-                        flex: 0 0 30%;
+                        flex: 0 0 100%;
                         flex-wrap: wrap;
                         margin-top: 0;
 
                         .file-link {
                             flex: 0 0 100%;
-                            max-width: 300px;
                         }
                     }
 

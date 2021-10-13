@@ -146,8 +146,11 @@
                 }
 
                 .img-block {
+                    height: 100%;
+
                     img {
                         width: 100%;
+                        height: 100%;
                     }
                 }
 
@@ -228,31 +231,16 @@
             &:first-of-type, &:nth-of-type(2) {
                 .col {
                     flex: 1 0 100%;
-
-                    &:first-of-type {
-                        margin-bottom: 15px;
-                    }
-
-                    &:last-of-type {
-                        margin-top: 15px;
-                    }
                 }
             }
 
             &:nth-of-type(2) {
-                .col {
-                    max-height: 230px;
-
-                    .title {
-                        bottom: 5px;
-                    }
-                }
-            }
-
-            &:nth-of-type(2), &:last-of-type {
                 margin-top: 30px;
-
+                
                 .col {
+                    height: 255px;
+                    margin: 15px 0;
+
                     a {
                         position: absolute;
                         top: 0;
@@ -260,36 +248,22 @@
                         bottom: 0;
                         left: 0;
                     }
-    
+
                     .title {
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
-                    }
-                }
-            }
-
-            &:last-of-type {
-                .col {
-                    flex: 1 0 100%;
-                    max-height: 255px;
-                    margin: 15px 0;
-
-                    .img-block {
-                        max-width: 255px;
-                        margin: 0 auto;
-                    }
-
-                    .title {
                         bottom: 5px;
                     }
-                    
-                    &:first-of-type {
-                        margin-top: 0;
+
+                    .img-block {
+                        img {
+                            object-fit: contain;
+                        }
                     }
 
-                    &:last-of-type {
-                        margin-bottom: 0;
+                    &:nth-of-type(1),  &:nth-of-type(2) {
+                        max-width: 540px;
                     }
                 }
             }
