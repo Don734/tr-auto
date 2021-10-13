@@ -424,6 +424,18 @@
     }
 }
 
+@media (min-width: 800px) {
+    .news {
+        .content {
+            .row {
+                .col {
+                    max-width: 350px;
+                }
+            }
+        }
+    }
+} 
+
 @media (min-width: 992px) {
     .header {
         .top-wrap {
@@ -717,16 +729,6 @@
 
                 .wrap {
                     max-width: 855px;
-                }
-            }
-        }
-    }
-
-    .news {
-        .content {
-            .row {
-                .col {
-                    max-width: 350px;
                 }
             }
         }
